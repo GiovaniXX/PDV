@@ -22,8 +22,6 @@ namespace PDV.AcessoBancoDados
             cmdgeral.Connection = conn;
         }
 
-
-
         #region METODOS
 
         /// <summary>

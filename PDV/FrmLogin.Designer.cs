@@ -35,11 +35,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.chkLembreMe = new System.Windows.Forms.CheckBox();
-            this.btnAcessar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnAcessar = new MagicUI.MagicControl.MagicButton();
+            this.chkLembreme = new MagicUI.MagicControl.MagicRadioButton();
+            this.magicButton1 = new MagicUI.MagicControl.MagicButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +50,7 @@
             this.lblEsqueciMinhaSenha.AutoSize = true;
             this.lblEsqueciMinhaSenha.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(133)))), ((int)(((byte)(133)))));
             this.lblEsqueciMinhaSenha.LinkColor = System.Drawing.Color.Crimson;
-            this.lblEsqueciMinhaSenha.Location = new System.Drawing.Point(462, 224);
+            this.lblEsqueciMinhaSenha.Location = new System.Drawing.Point(458, 228);
             this.lblEsqueciMinhaSenha.Name = "lblEsqueciMinhaSenha";
             this.lblEsqueciMinhaSenha.Size = new System.Drawing.Size(111, 13);
             this.lblEsqueciMinhaSenha.TabIndex = 145;
@@ -111,32 +112,6 @@
             this.txtUsuario.TabIndex = 137;
             this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // chkLembreMe
-            // 
-            this.chkLembreMe.AutoSize = true;
-            this.chkLembreMe.Location = new System.Drawing.Point(252, 224);
-            this.chkLembreMe.Name = "chkLembreMe";
-            this.chkLembreMe.Size = new System.Drawing.Size(148, 17);
-            this.chkLembreMe.TabIndex = 139;
-            this.chkLembreMe.Text = "Lembrar usuário e senha?";
-            this.chkLembreMe.UseVisualStyleBackColor = true;
-            // 
-            // btnAcessar
-            // 
-            this.btnAcessar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
-            this.btnAcessar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAcessar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAcessar.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcessar.ForeColor = System.Drawing.Color.White;
-            this.btnAcessar.Location = new System.Drawing.Point(252, 294);
-            this.btnAcessar.Name = "btnAcessar";
-            this.btnAcessar.Size = new System.Drawing.Size(317, 57);
-            this.btnAcessar.TabIndex = 140;
-            this.btnAcessar.Text = "Entrar";
-            this.btnAcessar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAcessar.UseVisualStyleBackColor = false;
-            this.btnAcessar.Click += new System.EventHandler(this.btnAcessar_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
@@ -170,19 +145,73 @@
             this.label2.TabIndex = 128;
             this.label2.Text = "Acesse com suas credenciais para acessar o sistema!";
             // 
+            // btnAcessar
+            // 
+            this.btnAcessar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
+            this.btnAcessar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
+            this.btnAcessar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAcessar.BorderRadius = 20;
+            this.btnAcessar.BorderSize = 0;
+            this.btnAcessar.FlatAppearance.BorderSize = 0;
+            this.btnAcessar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAcessar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcessar.ForeColor = System.Drawing.Color.White;
+            this.btnAcessar.Location = new System.Drawing.Point(259, 265);
+            this.btnAcessar.Name = "btnAcessar";
+            this.btnAcessar.Size = new System.Drawing.Size(305, 40);
+            this.btnAcessar.TabIndex = 146;
+            this.btnAcessar.Text = "Acessar";
+            this.btnAcessar.TextColor = System.Drawing.Color.White;
+            this.btnAcessar.UseVisualStyleBackColor = false;
+            // 
+            // chkLembreme
+            // 
+            this.chkLembreme.AutoSize = true;
+            this.chkLembreme.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.chkLembreme.Location = new System.Drawing.Point(252, 224);
+            this.chkLembreme.MinimumSize = new System.Drawing.Size(0, 21);
+            this.chkLembreme.Name = "chkLembreme";
+            this.chkLembreme.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.chkLembreme.Size = new System.Drawing.Size(157, 21);
+            this.chkLembreme.TabIndex = 147;
+            this.chkLembreme.TabStop = true;
+            this.chkLembreme.Text = "Lembrar usuário e senha?";
+            this.chkLembreme.UnCheckedColor = System.Drawing.Color.Gray;
+            this.chkLembreme.UseVisualStyleBackColor = true;
+            // 
+            // magicButton1
+            // 
+            this.magicButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
+            this.magicButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
+            this.magicButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.magicButton1.BorderRadius = 20;
+            this.magicButton1.BorderSize = 0;
+            this.magicButton1.FlatAppearance.BorderSize = 0;
+            this.magicButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.magicButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.magicButton1.ForeColor = System.Drawing.Color.White;
+            this.magicButton1.Location = new System.Drawing.Point(259, 311);
+            this.magicButton1.Name = "magicButton1";
+            this.magicButton1.Size = new System.Drawing.Size(305, 40);
+            this.magicButton1.TabIndex = 148;
+            this.magicButton1.Text = "Limpar";
+            this.magicButton1.TextColor = System.Drawing.Color.White;
+            this.magicButton1.UseVisualStyleBackColor = false;
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(576, 354);
+            this.Controls.Add(this.magicButton1);
+            this.Controls.Add(this.chkLembreme);
+            this.Controls.Add(this.btnAcessar);
             this.Controls.Add(this.lblEsqueciMinhaSenha);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.chkLembreMe);
-            this.Controls.Add(this.btnAcessar);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmLogin";
@@ -204,11 +233,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.CheckBox chkLembreMe;
-        private System.Windows.Forms.Button btnAcessar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
+        private MagicUI.MagicControl.MagicButton btnAcessar;
+        private MagicUI.MagicControl.MagicRadioButton chkLembreme;
+        private MagicUI.MagicControl.MagicButton magicButton1;
     }
 }
 

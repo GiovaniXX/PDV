@@ -30,9 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEnviarEmail));
             this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.btnEnviar = new System.Windows.Forms.Button();
             this.grpMensagem = new System.Windows.Forms.GroupBox();
-            this.btnAnexar = new System.Windows.Forms.Button();
             this.txtAnexo = new System.Windows.Forms.TextBox();
             this.txtMensagem = new System.Windows.Forms.TextBox();
             this.grbDePara = new System.Windows.Forms.GroupBox();
@@ -42,6 +40,8 @@
             this.lblSubjectLine = new System.Windows.Forms.Label();
             this.lblRemetente = new System.Windows.Forms.Label();
             this.lblDestinatario = new System.Windows.Forms.Label();
+            this.btnAnexar = new MagicUI.MagicControl.MagicButton();
+            this.magicButton1 = new MagicUI.MagicControl.MagicButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.grpMensagem.SuspendLayout();
             this.grbDePara.SuspendLayout();
@@ -58,28 +58,12 @@
             this.pictureBox.TabStop = false;
             this.pictureBox.Visible = false;
             // 
-            // btnEnviar
-            // 
-            this.btnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
-            this.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnviar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnEnviar.Image = global::PDV.Properties.Resources.email__1_;
-            this.btnEnviar.Location = new System.Drawing.Point(364, 441);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(133, 35);
-            this.btnEnviar.TabIndex = 110;
-            this.btnEnviar.TabStop = false;
-            this.btnEnviar.Text = " &Enviar [ F5 ]";
-            this.btnEnviar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEnviar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEnviar.UseVisualStyleBackColor = false;
-            // 
             // grpMensagem
             // 
             this.grpMensagem.Controls.Add(this.btnAnexar);
             this.grpMensagem.Controls.Add(this.txtAnexo);
             this.grpMensagem.Controls.Add(this.txtMensagem);
-            this.grpMensagem.ForeColor = System.Drawing.SystemColors.Control;
+            this.grpMensagem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.grpMensagem.Location = new System.Drawing.Point(12, 151);
             this.grpMensagem.Name = "grpMensagem";
             this.grpMensagem.Size = new System.Drawing.Size(485, 260);
@@ -87,24 +71,9 @@
             this.grpMensagem.TabStop = false;
             this.grpMensagem.Text = "Mensagem";
             // 
-            // btnAnexar
-            // 
-            this.btnAnexar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
-            this.btnAnexar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnexar.Image = global::PDV.Properties.Resources.paper_clip;
-            this.btnAnexar.Location = new System.Drawing.Point(14, 208);
-            this.btnAnexar.Name = "btnAnexar";
-            this.btnAnexar.Size = new System.Drawing.Size(129, 35);
-            this.btnAnexar.TabIndex = 1;
-            this.btnAnexar.TabStop = false;
-            this.btnAnexar.Text = " &Anexar [ F9 ]";
-            this.btnAnexar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAnexar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAnexar.UseVisualStyleBackColor = false;
-            // 
             // txtAnexo
             // 
-            this.txtAnexo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
+            this.txtAnexo.BackColor = System.Drawing.SystemColors.Window;
             this.txtAnexo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAnexo.Enabled = false;
             this.txtAnexo.Location = new System.Drawing.Point(149, 221);
@@ -114,7 +83,7 @@
             // 
             // txtMensagem
             // 
-            this.txtMensagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
+            this.txtMensagem.BackColor = System.Drawing.SystemColors.Window;
             this.txtMensagem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMensagem.Location = new System.Drawing.Point(14, 20);
             this.txtMensagem.Multiline = true;
@@ -130,7 +99,7 @@
             this.grbDePara.Controls.Add(this.lblSubjectLine);
             this.grbDePara.Controls.Add(this.lblRemetente);
             this.grbDePara.Controls.Add(this.lblDestinatario);
-            this.grbDePara.ForeColor = System.Drawing.SystemColors.Control;
+            this.grbDePara.ForeColor = System.Drawing.SystemColors.ControlText;
             this.grbDePara.Location = new System.Drawing.Point(12, 12);
             this.grbDePara.Name = "grbDePara";
             this.grbDePara.Size = new System.Drawing.Size(485, 133);
@@ -140,7 +109,7 @@
             // 
             // txtAssunto
             // 
-            this.txtAssunto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
+            this.txtAssunto.BackColor = System.Drawing.SystemColors.Window;
             this.txtAssunto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAssunto.Location = new System.Drawing.Point(70, 87);
             this.txtAssunto.Name = "txtAssunto";
@@ -149,7 +118,7 @@
             // 
             // txtEnviadoPor
             // 
-            this.txtEnviadoPor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
+            this.txtEnviadoPor.BackColor = System.Drawing.SystemColors.Window;
             this.txtEnviadoPor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEnviadoPor.Location = new System.Drawing.Point(70, 60);
             this.txtEnviadoPor.Name = "txtEnviadoPor";
@@ -158,7 +127,7 @@
             // 
             // txtEnviarPara
             // 
-            this.txtEnviarPara.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
+            this.txtEnviarPara.BackColor = System.Drawing.SystemColors.Window;
             this.txtEnviarPara.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEnviarPara.Location = new System.Drawing.Point(70, 33);
             this.txtEnviarPara.Name = "txtEnviarPara";
@@ -192,14 +161,56 @@
             this.lblDestinatario.TabIndex = 0;
             this.lblDestinatario.Text = "Para:";
             // 
+            // btnAnexar
+            // 
+            this.btnAnexar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAnexar.BackgroundColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAnexar.BorderColor = System.Drawing.SystemColors.ControlText;
+            this.btnAnexar.BorderRadius = 20;
+            this.btnAnexar.BorderSize = 0;
+            this.btnAnexar.FlatAppearance.BorderSize = 0;
+            this.btnAnexar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnexar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAnexar.Image = global::PDV.Properties.Resources.paper_clip;
+            this.btnAnexar.Location = new System.Drawing.Point(14, 209);
+            this.btnAnexar.Name = "btnAnexar";
+            this.btnAnexar.Size = new System.Drawing.Size(129, 40);
+            this.btnAnexar.TabIndex = 114;
+            this.btnAnexar.Text = "&Anexar [F9]";
+            this.btnAnexar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAnexar.TextColor = System.Drawing.SystemColors.ControlText;
+            this.btnAnexar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAnexar.UseVisualStyleBackColor = false;
+            // 
+            // magicButton1
+            // 
+            this.magicButton1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.magicButton1.BackgroundColor = System.Drawing.SystemColors.MenuHighlight;
+            this.magicButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.magicButton1.BorderRadius = 18;
+            this.magicButton1.BorderSize = 0;
+            this.magicButton1.FlatAppearance.BorderSize = 0;
+            this.magicButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.magicButton1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.magicButton1.Image = global::PDV.Properties.Resources.email__1_;
+            this.magicButton1.Location = new System.Drawing.Point(364, 431);
+            this.magicButton1.Name = "magicButton1";
+            this.magicButton1.Size = new System.Drawing.Size(133, 35);
+            this.magicButton1.TabIndex = 114;
+            this.magicButton1.Text = "&Enviar [F5]";
+            this.magicButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.magicButton1.TextColor = System.Drawing.SystemColors.ControlText;
+            this.magicButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.magicButton1.UseVisualStyleBackColor = false;
+            // 
             // FrmEnviarEmail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(509, 488);
+            this.Controls.Add(this.magicButton1);
             this.Controls.Add(this.pictureBox);
-            this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.grpMensagem);
             this.Controls.Add(this.grbDePara);
             this.Name = "FrmEnviarEmail";
@@ -216,9 +227,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox;
-        private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.GroupBox grpMensagem;
-        private System.Windows.Forms.Button btnAnexar;
         private System.Windows.Forms.TextBox txtAnexo;
         private System.Windows.Forms.TextBox txtMensagem;
         private System.Windows.Forms.GroupBox grbDePara;
@@ -228,5 +237,7 @@
         private System.Windows.Forms.Label lblSubjectLine;
         private System.Windows.Forms.Label lblRemetente;
         private System.Windows.Forms.Label lblDestinatario;
+        private MagicUI.MagicControl.MagicButton btnAnexar;
+        private MagicUI.MagicControl.MagicButton magicButton1;
     }
 }

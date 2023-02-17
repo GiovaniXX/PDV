@@ -36,6 +36,9 @@
     <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
       <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
     </Reference>
+    <Reference Include="Magic.ModernUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Magic.ModernUI.1.0.0\lib\net45\Magic.ModernUI.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -45,8 +48,12 @@
     <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
+    <Reference Include="MetroSet UI, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroSet_UI.2.0.0\lib\net45\MetroSet UI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -280,6 +287,9 @@
     <EmbeddedResource Include="Cadastros\FrmCadstrarFormasPagamento.resx">
       <DependentUpon>FrmCadstrarFormasPagamento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Emails\FrmEnviarEmail.resx">
       <DependentUpon>FrmEnviarEmail.cs</DependentUpon>
     </EmbeddedResource>
@@ -339,6 +349,9 @@
     <Content Include="Resources\reset.png" />
     <Content Include="Resources\salvar25.png" />
     <Content Include="Resources\trash %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
