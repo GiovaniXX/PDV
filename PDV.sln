@@ -7,19 +7,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDV.Apresentacao", "PDV\PDV
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Apresentacao", "1.Apresentacao", "{C33A7D43-B078-478E-9B35-A2C8B4CD599C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDV.ObjetoTransferencia", "PDV.ObjetoTransferencia\PDV.ObjetoTransferencia.csproj", "{1DFCAC86-70BA-415B-A8C8-FC9A44DE2358}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDV.ObjetoTransferencia", "PDV.ObjetoTransferencia\PDV.ObjetoTransferencia.csproj", "{1DFCAC86-70BA-415B-A8C8-FC9A44DE2358}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.ObjetoTransferencia", "2.ObjetoTransferencia", "{835D82C2-007C-4BF5-9810-2E1D20505FA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDV.Negocios", "PDV.Negocios\PDV.Negocios.csproj", "{35F1637D-37F1-4B7B-A799-BAA41F23E60D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDV.Negocios", "PDV.Negocios\PDV.Negocios.csproj", "{35F1637D-37F1-4B7B-A799-BAA41F23E60D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDV.AcessoBancoDados", "PDV.AcessoBancoDados\PDV.AcessoBancoDados.csproj", "{B7EEF94A-9E4E-4ACB-A655-24D092C931D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDV.AcessoBancoDados", "PDV.AcessoBancoDados\PDV.AcessoBancoDados.csproj", "{B7EEF94A-9E4E-4ACB-A655-24D092C931D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Negocios", "3.Negocios", "{C1DDF5E9-53A3-4490-9128-7F85B1189FD2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Dados", "4.Dados", "{9EA46884-9EA5-4899-8A60-BBDC8CD2E548}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDV.Componentes", "PDV.Componentes\PDV.Componentes.csproj", "{48D6821B-61BD-46C0-AE60-78B2BA7C62F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDV.Componentes", "PDV.Componentes\PDV.Componentes.csproj", "{48D6821B-61BD-46C0-AE60-78B2BA7C62F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Componentes", "5.Componentes", "{80FFD9EA-7A19-4002-9C9F-B3FCAE433A75}"
 EndProject

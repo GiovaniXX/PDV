@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PDV.ObjetoTransferencia
+﻿namespace PDV.ObjetoTransferencia
 {
-    internal class Cidades
+    public class Cidades
     {
+        public int CidadeId { get; set; }
+        public int CodigoIBGE { get; set; }
+        public string Nome { get; set; }
+        public char UF { get; set; }
     }
 }

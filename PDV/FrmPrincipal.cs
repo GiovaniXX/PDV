@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using PDV.AcessoBancoDados;
+using PDV.Cadastros;
+using PDV.Cadastros.Clientes;
+using PDV.MovimentacaoCaixa;
+using PDV.Negocios;
+using PDV.ObjetoTransferencia;
+using System;
 using System.Data;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace PDV
@@ -179,11 +180,6 @@ namespace PDV
             }
         }
 
-        private void menuTranferirSaldo_Click(object sender, EventArgs e)
-        {
-
-        }
-
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -348,23 +344,7 @@ namespace PDV
 
         private void menuGrupoImpostoCadastrados_Click(object sender, EventArgs e)
         {
-            bool found = false;
 
-            foreach (Form form in Application.OpenForms)
-            {
-                if (form is FrmGerenciamentoTributario)
-                {
-                    form.Focus();
-                    found = true;
-                }
-            }
-
-            if (!found)
-            {
-                FrmGerenciamentoTributario frmGerenciamentoTributario = new FrmGerenciamentoTributario(Convert.ToInt32(dtEmpresa.Rows[0]["RegimeTributario"]));
-                frmGerenciamentoTributario.MdiParent = this;
-                frmGerenciamentoTributario.Show();
-            }
         }
 
         #endregion

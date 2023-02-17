@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PDV.ObjetoTransferencia
+﻿namespace PDV.ObjetoTransferencia
 {
-    internal class Cofins
+    public class Cofins
     {
+        public int CofinsId { get; set; }
+        public string CofinsCst { get; set; }
+        public string Descricao { get; set; }
+        public int Tipo { get; set; }
     }
 }
+

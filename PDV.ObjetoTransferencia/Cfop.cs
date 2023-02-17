@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PDV.ObjetoTransferencia
+﻿namespace PDV.ObjetoTransferencia
 {
-    internal class Cfop
+    public class Cfop
     {
+        public int CfopId { get; set; }
+        public string Codigo { get; set; }
+        public bool Grupo { get; set; }
+        public string Descricao { get; set; }
+        public string Aplica { get; set; }
     }
 }

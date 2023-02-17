@@ -1,12 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PDV.ObjetoTransferencia
 {
-    internal class Caixa
+    public class Caixa
     {
+        public int CaixaId { get; set; }
+        public int UsuarioId { get; set; }
+        public DateTime Abertura { get; set; }
+        public DateTime Fechamento { get; set; }
+        public decimal Valor { get; set; }
+
     }
 }
